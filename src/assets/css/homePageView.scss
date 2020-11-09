@@ -1,0 +1,122 @@
+@import './variables.scss';
+
+#home-page{
+width: $sizeLarge;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+min-height: 100vh;
+background-color: white;
+    #home-page-header{
+        padding-top: $spacing1;
+    }
+    .requiredFilters{
+        justify-content: flex-start;
+        display: flex;
+        @media only screen and (max-width: $breakPointSm){
+            justify-content: center;
+         } 
+    }
+}
+
+#home-page-under-header{
+    // @extend .bg-main-2;
+    margin: $spacing1 $spacing2;
+    border-bottom: $border1;
+    padding-bottom: $spacing2;
+    .text-input-1{
+        margin-top: $spacing1;
+    }
+    #home-page-under-header-left{
+        @media only screen and (max-width: $breakPointSm){
+           text-align: center;
+        } 
+    }
+    #home-page-under-header-right{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+
+
+
+.vgt-wrap__footer{
+    border-radius: $radius3;
+    margin-bottom: $spacing2;
+    background: #fff;
+    box-shadow: $boxShadow1;
+    max-width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vgt-responsive{
+    border-radius: $radius4;
+    .vgt-table{
+        border: none;
+        thead{
+            display: none;
+        }
+        tbody{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            justify-content: space-between;
+            padding: $spacing1;
+
+            label{
+                color:$colorMainGrey1;
+                font-weight: $fat;
+                margin-bottom: $spacing0;
+                display: block;
+            }
+            tr{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 49%;
+                @media only screen and (max-width: $breakPointSm){
+                    width: 100%;
+                } 
+                padding: $spacing1;
+                border-radius: $radius2;
+                margin-bottom: $spacing2;
+                border: $border1;
+                box-shadow: $boxShadow1;
+                td{
+                    border: none;
+                    padding: 0 $spacing2;
+                    padding-bottom: $spacing1;
+                }
+            } 
+
+        }
+       
+    }
+}
+.last-reported-tag{
+    margin-top: $spacing0;
+    text-align: right;
+    display: block;
+}
+
+
+.has-no-data-container{
+    width: calc(98% - 30px);
+    border: $border1;
+    border-radius: $radius2;
+    padding: $spacing5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: $boxShadow1;
+    tr{
+        td{
+            border: none!important;
+        }
+        
+    }
+}

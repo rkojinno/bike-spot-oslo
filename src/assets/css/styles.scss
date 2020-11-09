@@ -1,0 +1,255 @@
+@import './variables.scss';
+
+
+// Modifier
+.columns{
+    margin: 0;
+}
+body,p,button,label,a,div{
+    font-size: $fontSize1;
+}
+button{
+    cursor: pointer;
+}
+
+
+// Transitions
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 2s  ease;;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+
+
+
+
+// Colors .......................................
+.bg-main{
+    background-color: $colorMain;
+}
+.bg-main-2{
+    background-color: $colorMain2;
+}
+
+
+
+
+// Containers..............................
+
+.reverse-col-mobile{
+    @media only screen and (max-width: $breakPointSm){
+        flex-direction: column-reverse;
+        display: flex;
+    } 
+}
+
+.cntr-lg{
+    width: 100%;
+    max-width:$sizeLarge;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cntr-brd-1{
+    border-right: $border0;
+    border-left: $border0;
+}
+
+
+// Align
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+
+
+// Inputs .............................
+
+.text-input-1{
+    display: inline-block;
+    width: 257px;
+    border-radius: $radius1;
+    border: $border0;
+    padding:$spacing0;
+}
+
+
+// Buttons 
+
+.button-clear, .button-refresh{
+    border: none;
+    border-radius: $border0;
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.button-clear{
+    min-height: $spacing5;
+    display: inline-block;
+    margin-left: $spacing0;
+    background-color: $colorMainRed;
+    color: $colorMainWhite;
+}
+.button-refresh{
+    background-color: $colorMainGreen;
+    padding: $spacing0  $spacing1;
+    @extend .icon-size-1;
+    span{
+        svg{
+
+            color: $colorMainWhite;
+            fill: $colorMainWhite;
+        }
+    } 
+}
+.button-return-home{
+    color: white;
+    background-color: $colorMainGreen;
+    padding: $spacing0 $spacing1;
+    display: inline-block;
+    margin-top: $spacing2;
+    border-radius: $radius1;
+}
+.button-view-map{
+    background-color: transparent;
+    border: none;
+    font-size: $fontSize1;
+    color: $colorMainGreen;
+    span{
+        width: $fontSize1;
+        height: $fontSize1;
+        display: inline-block;
+        svg{
+            color: $colorMainGreen;
+            fill:$colorMainGreen;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover{
+        opacity: 0.9;
+    }
+}
+
+.button-filter-active, .button-filter-inactive{
+    align-self: end;
+    padding: $spacing0 $spacing2;
+    margin: 0 $spacing1;
+    border-radius: $radius2;
+    background: transparent;
+}
+.button-filter-active{
+    border:  $border4;
+    background-color: $colorMain2;
+    color: $colorMainWhite;
+}
+.button-filter-inactive{
+    border: $border3;
+    color: $colorMainGrey2;
+    &:hover{
+        border: $border4;
+        background-color: $colorMain2;
+        color:$colorMainWhite;
+        opacity: 0.7;
+    }
+}
+
+// Icons ........................
+.icon-size-1{
+    span{
+        width: $spacing2;
+        height: $spacing3;
+        display: flex;
+        svg{
+            display: block;
+            width: 100%;
+        }
+    } 
+}
+
+// Tags ...................
+
+
+.tagZero, .tagLow, .tagGood{
+    padding: $spacing0;
+    border-radius: $radius1;
+    color: $colorMainWhite;
+    // min-width: 153px;
+    display: inline-block;
+    text-align: center;
+    margin-right: $spacing1;
+}
+.tagZero{
+    background-color: $colorTagZero;
+}
+.tagLow{
+    background-color: $colorTagLow;
+}
+.tagGood{
+    background-color: $colorTagGood;
+}
+
+
+.confirmation_tag, .failure_tag{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    border-radius: 7px 7px 0 0;
+    width: 100%;
+}
+
+.confirmation_tag{
+    background-color: $colorMainGreen;
+}
+.failure_tag{
+    background-color: $colorMainRed;
+}
+
+
+
+
+// ALL pages ............................................................
+
+#page-header{
+    @extend .bg-main;
+    @extend .text-center;
+    padding-bottom: $spacing1;
+    p{
+        color: $colorMainWhite;
+    }
+    
+}
+
+
+// Home Page ............................................................
+
+#home-page{
+    width: 100%;
+//     background-image: url('../images/bg.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//   background-attachment: fixed;
+    #home-page-under-header,#home-page-table {
+         @extend .cntr-lg;
+    }
+   
+}
+
+
+
+
+

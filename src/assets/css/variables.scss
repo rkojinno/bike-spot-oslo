@@ -1,0 +1,68 @@
+
+// Colors .............................
+
+$colorMain: #375ec5;
+$colorMain2:#3456b0;
+$colorMainBg:#10131e;
+
+$colorMainGreen:#55a157;
+$colorMainRed:#d24545;
+
+
+$colorMainWhite:#f2f2f2;
+$colorMainGrey0:#eaeaec;
+$colorMainGrey1:#948f8f;
+$colorMainGrey2:#807878;
+$colorMainBlack:#262626;
+
+
+$colorTagZero: rgb(189, 15, 15);
+$colorTagLow: #91471c;
+$colorTagGood: rgb(21, 131, 98);
+
+
+
+// BreakPoints .......................
+$breakPointSm: 769px;
+
+//Window Sizes .......................
+$sizeLarge:1400px;
+$sizeSmall:700px;
+
+// Font Sizes
+$fontSize0:11px;
+$fontSize1:16px;
+$fontSize2:21px;
+$fontSize3:30px;
+$fat:600;
+$slim:200;
+
+
+// Spacing
+$spacing0: 5px;
+$spacing1: 10px;
+$spacing2: 15px;
+$spacing3: 20px;
+$spacing4: 25px;
+$spacing5: 30px;
+
+// Radius
+
+$radius1: 3px;
+$radius2: 9px;
+$radius3: 15px;
+$radius4: 21px;
+
+
+// Borders ....
+$border0: 1px solid $colorMainGrey1;
+$border1: 2px solid $colorMainGrey0;
+$border2: 1px solid $colorTagGood;
+$border3:  1px solid $colorMainGrey2;
+$border4:  1px solid $colorMain2;
+
+// Box Shadow
+$boxShadow1: 1px 1px 0px $colorMainGrey2;
+$boxShadow2: 0px 2px 5px rgba(10,10,10,0.5);
+
+

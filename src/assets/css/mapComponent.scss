@@ -1,0 +1,72 @@
+@import './variables.scss';
+
+.map-component{
+
+    .map-component-bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $colorMainWhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        .map-component-inner{
+            width: $sizeSmall;
+            height: 70vh;
+            padding-top: 10vh;
+            max-width: 90%;
+            .map-component-close-top{
+                display: block;
+                text-align: right;
+                button{
+                    width: $fontSize3;
+                    height: $fontSize3;
+                    display: inline-block;
+                    border-radius: 100%;
+                    border: none;
+                    color: $colorMainGrey2;
+                    font-weight: $fat;
+                    margin-bottom: $spacing1;
+                    // background-color: $colorMainGrey1;
+                }
+            }
+            .map-component-close{
+                display: block;
+                background-color: $colorMainRed;
+                width: 100%;
+                color:$colorMainWhite;
+                border-radius: 0 0 $radius3 $radius3;
+                font-size: $fontSize2;
+                min-height:$spacing5 * 2;
+            }
+            .map-component-map{
+                display: block;
+                width: 100%;
+                height: calc(100% - 40px);
+                border-radius: $radius3 $radius3 0 0;
+                overflow: hidden;
+            }
+            .map-component-loading{
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: $radius3;
+                background-color: $colorMainWhite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $colorMainGrey1;
+
+
+            }
+
+        }
+
+    }
+
+}
+
