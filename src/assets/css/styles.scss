@@ -10,6 +10,7 @@ body,p,button,label,a,div{
 }
 button{
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -142,7 +143,7 @@ button{
 }
 
 .button-filter-active, .button-filter-inactive{
-    align-self: end;
+    align-self: flex-end;
     padding: $spacing0 $spacing2;
     margin: 0 $spacing1;
     border-radius: $radius2;
