@@ -29,7 +29,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # Log
 
 # Done
-- Fix jest.config.js tonpm install node-sass -D "testURL: "http://localhost/","
+- Fix jest.config.js
 - Create Home View
 - Add Sass Loader (note: when testing with an scss file, I had to adust the node-sass and loader version)
 - Added Bulma.css as a support structure
@@ -47,7 +47,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Add Automatic Update on Status Obj
 - Work on Responsive Card (titles and display)
 - Polish 
-- Add maps (I was going to use google, but I don have a credit card)
+- Add maps
 - Add Filters
 - Edit custom vue good table text 
 - Edit custom vue good table no Data
@@ -55,6 +55,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 # Next
-- General Improvments and tests
+- General Improvements and tests
 
 
